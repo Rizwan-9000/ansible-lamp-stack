@@ -1,7 +1,6 @@
 #- name: initializing root password
 #  shell: mysql --user=root --execute="ALTER USER 'root'@'localhost' IDENTIFIED WITH 'mysql_native_password' BY '{{ root_password }}'; FLUSH PRIVILEGES;"
 #  tags: root_init
-#  # when: rc == 0
 #  ignore_errors: yes
 
 - name: initiliazing root password
